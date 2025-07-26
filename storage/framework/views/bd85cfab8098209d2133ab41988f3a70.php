@@ -203,15 +203,15 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <a href="#" class="text-xl md:text-2xl font-bold"><img src="{{ asset('build/images/logo.jpg') }}" alt="logo" width="200" height="300"></a>
+                <a href="#" class="text-xl md:text-2xl font-bold"><img src="<?php echo e(asset('build/images/logo.jpg')); ?>" alt="logo" width="200" height="300"></a>
             </div>
             
             <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
-                <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base">{{ __('common.Home') }}</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base">{{ __('common.Categories') }}</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base">{{ __('common.Blog') }}</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base">{{ __('common.About Us') }}</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base">{{ __('common.Contact') }}</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base"><?php echo e(__('common.Home')); ?></a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base"><?php echo e(__('common.Categories')); ?></a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base"><?php echo e(__('common.Blog')); ?></a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base"><?php echo e(__('common.About Us')); ?></a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base"><?php echo e(__('common.Contact')); ?></a>
             </div>
             
             
@@ -1096,4 +1096,4 @@
 		
     </script>
 </body>
-</html>
+</html><?php /**PATH C:\KajalProjects\SCIZORA\resources\views/welcome.blade.php ENDPATH**/ ?>
