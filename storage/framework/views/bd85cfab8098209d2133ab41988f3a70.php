@@ -207,7 +207,7 @@
             </div>
             
             <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
-                <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base"><?php echo e(__('common.Home')); ?></a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base"><?php echo e(__('common.Dashboard')); ?></a>
                 <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base"><?php echo e(__('common.Categories')); ?></a>
                 <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base"><?php echo e(__('common.Blog')); ?></a>
                 <a href="#" class="text-gray-700 hover:text-blue-600 transition-all text-sm lg:text-base"><?php echo e(__('common.About Us')); ?></a>
@@ -216,12 +216,17 @@
             
             
             <div class="flex items-center space-x-3 md:space-x-4">
-                <a href="User Pages\login.html">
+                <a href="<?php echo e(route('admin.dashboard',['ty' => custom_encrypt('admin.dashboard')])); ?>">
+                    <button class="hidden md:block bg-blue-600 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full hover:bg-blue-700 transition-all text-sm md:text-base">
+                       Admin Dashboard
+                    </button>
+                </a>
+                <a href="<?php echo e(route('business.login')); ?>">
                     <button class="hidden md:block bg-blue-600 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full hover:bg-blue-700 transition-all text-sm md:text-base">
                        Business Login
                     </button>
                 </a>
-                <a href="User Pages\login.html">
+                <a href="<?php echo e(route('customer.login')); ?>">
                     <button class="hidden md:block bg-blue-600 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full hover:bg-blue-700 transition-all text-sm md:text-base">
                         Login
                     </button>
@@ -234,7 +239,7 @@
         
         <!-- Mobile Menu - Enhanced for better mobile experience -->
         <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
-            <a href="#" class="block py-3 text-gray-700 hover:text-blue-600 border-b border-gray-100">Home</a>
+            <a href="#" class="block py-3 text-gray-700 hover:text-blue-600 border-b border-gray-100">Dashboard</a>
             <a href="#" class="block py-3 text-gray-700 hover:text-blue-600 border-b border-gray-100">Categories</a>
             <a href="#" class="block py-3 text-gray-700 hover:text-blue-600 border-b border-gray-100">Blog</a>
             <a href="#" class="block py-3 text-gray-700 hover:text-blue-600 border-b border-gray-100">About Us</a>
@@ -957,7 +962,7 @@
                 <div>
                     <h3 class="text-lg md:text-xl font-bold mb-3 md:mb-4">Quick Links</h3>
                     <ul class="space-y-1 md:space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-all text-sm sm:text-base">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all text-sm sm:text-base">Dashboard</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-all text-sm sm:text-base">Categories</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-all text-sm sm:text-base">Top Companies</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-all text-sm sm:text-base">Recent Reviews</a></li>

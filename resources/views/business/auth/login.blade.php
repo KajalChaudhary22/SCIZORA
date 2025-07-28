@@ -31,7 +31,7 @@
             <div class="flex items-center">
                 <a href="../index.html">
                     <h1 class="text-2xl font-bold">
-                        <a href="#" class="text-xl md:text-2xl font-bold"><img src="logo.jpg" alt="logo" width="200" height="60"></a>
+                        <a href="#" class="text-xl md:text-2xl font-bold"><img src="{{ asset('build/images/logo.jpg') }}" alt="logo" width="200" height="60"></a>
                     </h1>
                 </a>
             </div>
@@ -212,7 +212,7 @@
         <div class="container mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4"><a href="#" class="text-xl md:text-2xl font-bold"><img src="logo.jpg" alt="logo" width="200" height="60"></a></h3>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4"><a href="#" class="text-xl md:text-2xl font-bold"><img src="{{ asset('build/images/logo.jpg') }}" alt="logo" width="200" height="60"></a></h3>
                     <p class="text-sm">LabZora is the leading pharmaceutical marketplace connecting businesses across the supply chain. Our platform facilitates secure transactions and partnerships in the global pharmaceutical industry.</p>
                 </div>
                 

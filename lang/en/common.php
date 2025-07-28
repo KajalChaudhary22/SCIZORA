@@ -16,4 +16,5 @@ return [
 'Blog' => 'Blog',
 'About Us' => 'About Us',
 'Contact' => 'Contact',
+"Dashboard" => "Dashboard",
 ];
