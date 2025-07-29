@@ -1,0 +1,1 @@
+<?php /**PATH C:\KajalProjects\SCIZORA\resources\views/admin/auth/login.blade.php ENDPATH**/ ?>

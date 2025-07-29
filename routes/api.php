@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Customer\Auth\AuthenticationController as CustomerAuth;
+use App\Http\Controllers\Business\Auth\AuthenticationController as BusinessAuth;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,11 +21,11 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::prefix('business')->group(function () {
-    Route::post('login', [BusinessApiController::class, 'login'])->name('business.login');
-    Route::post('register', [BusinessApiController::class, 'register'])->name('business.register');
+    Route::post('login', [BusinessAuth::class, 'login'])->name('business.login.validate');
+    Route::post('register', [BusinessAuth::class, 'register'])->name('business.register');
 });
 
 Route::prefix('customer')->group(function () {
-    Route::post('login', [CustomerApiController::class, 'login'])->name('customer.login');
-    Route::post('register', [CustomerApiController::class, 'register'])->name('customer.register');
+    Route::post('login', [CustomerAuth::class, 'login'])->name('customer.login.validate');
+    Route::post('register', [CustomerAuth::class, 'register'])->name('customer.register');
 });
