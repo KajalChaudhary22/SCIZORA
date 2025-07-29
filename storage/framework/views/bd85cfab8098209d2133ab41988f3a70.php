@@ -223,7 +223,8 @@
                 </a>
                 <a href="<?php echo e(route('business.login')); ?>">
                     <button class="hidden md:block bg-blue-600 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full hover:bg-blue-700 transition-all text-sm md:text-base">
-                       Business Login
+                       <?php echo e(__('common.Business Login')); ?>
+
                     </button>
                 </a>
                 <a href="<?php echo e(route('customer.login')); ?>">
