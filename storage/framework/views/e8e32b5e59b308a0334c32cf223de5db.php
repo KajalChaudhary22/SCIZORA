@@ -1454,4 +1454,4 @@
         #scheduleDateGroup {
             display: none;
         }
-    </style>
+    </style><?php /**PATH D:\Projects\SCIZORA\resources\views/admin/dashboard/styles.blade.php ENDPATH**/ ?>
